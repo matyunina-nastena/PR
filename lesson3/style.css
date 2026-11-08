@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
+  background: grey;
+  gap: 10px;
+}
+
+.mainted {
+  display: flex;
+  flex-direction: column;
+  flex: 1; 
+  gap: 10px;
+  min-width: 0;
+  min-height: 0;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  padding: 20px;
+  background: white;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  margin-top: auto;
+  padding: 20px;
+  background: white;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex: 1;
+  align-items: center;
+  align-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 170px;
+  height: 150px;
+  padding: 20px;
+  align-items: center;   
+  background: white;
+}
+
+.cardMini {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 65px;
+  height: 55px;
+  padding: 2px;
+  background: white;
+}
+
+.contentMini {
+  display: flex; 
+  width: 50%;
+  justify-content: center;
+  align-content: center;
+  align-items: center;   
+  margin-left: 50px;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+
+.contenPosition {
+  display: flex;
+  width: 100%;
+  height: 80%;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.sidebar {
+  flex: 0 0 20%;
+  height: 100%;
+  background: white;
+}
