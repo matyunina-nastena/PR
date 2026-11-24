@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Demo version for music</title>
+    <link rel = "stylesheet" href = "./styles.css" />
+    <script src = "https://cdn.jsdelivr.net/npm/mp3tag.js@latest/dist/mp3tag.min.js"> </script> <!-- библиотека для парсинга метаданных-->
+    <script src="./index.js" type="text/javascript"></script>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div class="container">
+        <div id="dropzone">
+            <p>перетащите или <button onclick="chooseFile()">выберите</button> файл</p>
+        </div>
+        <input type="text" id="linkInput" oninput="processLink()" placeholder="Вставьте ссылку на файл">
+    <div class="playerContainer">
+        <div>
+            <img id="cover"/>
+            <span id = "artist"></span>
+            <span id = "song"></span>
+        </div>
+        <audio id="player" controls></audio>
+    </div>
+</div>
+</body>
+</html>

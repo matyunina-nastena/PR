@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* центрируем сам контейнер по горизонтали */
+    background-color: bisque; /* для наглядности */
+}
+
+.container {
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#linkInput {
+    width: 100%;
+    margin: 20px 0;
+}
+
+#dropzone {
+    width: 100%;
+    height: 200px;
+    border: 3px black dashed;
+    display: flex;              /* чтобы текст внутри был по центру */
+    align-items: center;
+    justify-content: center;
+}
+
+#cover {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;          /* чтобы картинка не искажалась */
+    background-color: #eee;     /* чтобы пустая обложка была видна */
+}
+
+.playerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.playerContainer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.playerContainer audio {
+    width: 50vw;
+}
+input {
+    color: firebrick;
+    
+}
